@@ -10,6 +10,9 @@ cur2.execute('insert into study(sname) values ('%s'%type1)
 conn.commit()
 >>>>写更新模块框架
 
+>>>>if 下不能直接break
+>>>>
+
 
 
 
