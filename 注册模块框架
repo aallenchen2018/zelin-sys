@@ -1,0 +1,14 @@
+一 ，注册>>>>>>基本信息选择： sname,colleage,tel,sex  （在后台就是在各个表内建立用户）
+
+
+a=input('名字')  #用户操作
+
+insert into student ('sid'','sname') values (null,'a') ;
+insert into study ('sid','sname') values ((select sid from student where sname='a'),'a');
+
+二， 完善信息>>>>>>>>
+： 
+所有内容提供出来让用户update;
+
+
+三，删除

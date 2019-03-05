@@ -1,0 +1,43 @@
+#################c:用view 视图解决了  在pymysql 不能多表查询的问题>>可以考虑不用视图，用最简单的语句来完成查找>>注册代码的模块（难点：
+原代码为：
+cur.execute("insert into study (sid,sname) values ((select sid from student where sname='%s'),'%s')"%(type1,type1))
+改为：
+cur1=conn.cursor()
+cur1.execute("insert into study (sid) values ('select sid from student where sname="%s"'%type1)
+conn.commit()
+cur2=conn.cursor()
+cur2.execute('insert into study(sname) values ('%s'%type1)
+conn.commit()
+>>>>写更新模块框架
+
+
+
+
+
+#####################j:查询视图里面的元组，如果有则打印出相关的内容>得出结果用mysql语句在视图中执行，找出需要的内容
+写基本信息和完善信息框架 和 代码
+
+
+
+
+
+################d:查询视图>>用列表的方法把视图导出来，在查询列表是否在存在该元素，由于视图的select出来的内容由元组来组成，转化成的列元素也是元素，所以麻烦
+难点：
+#遇到问题:
+mysql需要显示多个表数据时尝试的方法:
+1.使用inner join 和natural join 方式尝试拼接多张表(student和study表的拼接:当两个表所有数据齐全时可以拼接;当表一有两行数据表二只有一行数据时,只显示表一表二都有数据的行;若表一有数据,表二为空表时,则会出现拼接显示为空)
+2.使用创建视图的方法
+create view a_match as select s.sid,s.sname,s.ssex,s.college,s.tel,st.cname,st.degree,st.lagtime,st.lapsetimes where s.sid=st.sid;
+(问题同上)
+>>>写更新模块框架
+
+
+
+####################c:当完善信息时，用户通过手机（唯一）或者注册名字来定位，然后完善其他信息;
+
+
+##################p:帮忙做view视图，连接所有表或者多个表
+
+##############q:在查询框架下，写出查询模块
+
+
