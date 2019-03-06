@@ -33,6 +33,7 @@ mysql需要显示多个表数据时尝试的方法:
 create view a_match as select s.sid,s.sname,s.ssex,s.college,s.tel,st.cname,st.degree,st.lagtime,st.lapsetimes where s.sid=st.sid;
 (问题同上)
 >>>写更新模块框架
+>>>写删除和更新模块
 
 
 

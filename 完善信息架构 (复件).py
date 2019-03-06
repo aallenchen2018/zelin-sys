@@ -70,10 +70,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 						except Exception as result:
 							print('请输入正确的格式')
 						finally:

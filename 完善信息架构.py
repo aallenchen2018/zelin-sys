@@ -9,7 +9,7 @@ while 1:
 	cur.execute('select * from student where sname="%s"'%a)
 	data=cur.fetchall()
 	for i in data:
-		print('*'*70,'\n',"SID: %d>>>,名字： %s>>>学校：  %s>>>tel:  %s>>>性别：  %s"%(i[0],i[1],i[2],i[3],i[4]))
+		print('*'*70,'\n',"SID:>>>%d;名字:>>>%s;学校:>>>%s ;tel:>>>%s;性别:>>>%s"%(i[0],i[1],i[2],i[3],i[4]))
 	
 	if len(data)==0:
 		print('*'*70,'\n',)
@@ -25,11 +25,11 @@ while 1:
 			if c=='1':
 				print('*'*70,'\n',)
 				d=input('''请选择学习系统中要修改的单个信息
-				1.sname			6.degree       
-				2.tel			7.lagtime
-				3.college		8.lapsetimes
-				4.ssex			9.rname
-				5.cname			10.lesson    
+				1.sname名字			6.degree成绩       
+				2.tel电话			7.lagtime迟到次数
+				3.college大学		8.lapsetimes违纪次数
+				4.ssex性别			9.rname教室名称
+				5.cname课程名字			10.lesson课程    
 
 
 				''')
@@ -74,10 +74,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 						except Exception as result:
 							print('请输入正确的格式')
 						finally:
@@ -126,10 +126,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 						except Exception as result:
 							print('请输入正确的格式')
 						finally:
@@ -176,10 +176,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 
 								print(a)
 								cur.execute("select * from student where sname='%s'"%a)
@@ -195,10 +195,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))								
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))								
 						except Exception as result:
 							print('请输入正确的格式')
 						finally:
@@ -245,10 +245,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 
 															
 						except Exception as result:
@@ -298,10 +298,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 
 															
 						except Exception as result:
@@ -352,10 +352,10 @@ while 1:
 									
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 								
 															
 						except Exception as result:
@@ -404,10 +404,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 
 															
 						except Exception as result:
@@ -456,10 +456,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 
 															
 						except Exception as result:
@@ -535,10 +535,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 						except Exception as result:
 							print('请输入正确的格式')
 						finally:
@@ -585,10 +585,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 
 															
 						except Exception as result:
@@ -637,10 +637,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 
 															
 						except Exception as result:
@@ -690,10 +690,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 
 															
 						except Exception as result:
@@ -742,10 +742,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 
 															
 						except Exception as result:
@@ -794,10 +794,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 
 															
 						except Exception as result:
@@ -846,10 +846,10 @@ while 1:
 									print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 								data2=cur2.fetchall()
 								for l in data2:
-									print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+									print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 								data3=cur3.fetchall()
 								for l in data3:
-									print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+									print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 
 															
 						except Exception as result:
@@ -931,10 +931,10 @@ while 1:
 										print("班级名字:>>>%s,成绩：>>>%s,迟到次数：>>>%s,违纪次数：>>>%s"%(l[2],l[3],l[4],l[5]))
 									data2=cur2.fetchall()
 									for l in data2:
-										print("毕业实际:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
+										print("毕业时间:>>>%s,工资：>>>%s,公司：>>>%s"%(l[2],l[3],l[4]))
 									data3=cur3.fetchall()
 									for l in data3:
-										print("新公司:>>>%s,新薪水：>>>%s,跳槽实际：>>>%s"%(l[1],l[2],l[3]))
+										print("新公司:>>>%s,新薪水：>>>%s,跳槽时间：>>>%s"%(l[1],l[2],l[3]))
 				except Exception as result:
 					print('请输入正确的格式')
 				finally:
