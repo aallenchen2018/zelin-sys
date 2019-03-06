@@ -1,3 +1,0 @@
-select * from student where sname='input'
-select * from study where sname='input'
-select * from 
